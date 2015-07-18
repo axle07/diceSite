@@ -1,0 +1,21 @@
+
+nav {
+  position: absolute;
+  left: -80px
+}
+main, .main {
+  width: 960px;
+  margin: auto;
+  padding: 12px;
+  max-width: 100%;
+}
+.wrap {
+  margin: auto;
+}
+.dice {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: inline-block;
+}
