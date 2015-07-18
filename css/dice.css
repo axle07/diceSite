@@ -13,9 +13,28 @@ main, .main {
   margin: auto;
 }
 .dice {
-  width: 120px;
-  height: 120px;
   border: 1px solid black;
   border-radius: 8px;
   display: inline-block;
+  padding: 6px;
 }
+.dice tr {
+  margin: 0;
+  padding: 0;
+}
+.dice td {
+  width: 34px;
+  height: 34px; /* why not 40px? */
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+.dot {
+    width: 26px;
+    height: 26px;
+    background-color: black;
+    border-radius: 19px;
+    margin: auto;
+    padding: 0;
+  }
