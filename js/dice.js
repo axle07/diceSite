@@ -41,7 +41,7 @@ function showRoll() {
 	$('.dice').remove();
 
 	for (var i = 0; i < results.length; i++) {
-		$('#wrap').append('<table class="dice" id="table' + i + '"><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>');
+		$('#wrap').prepend('<table class="dice" id="table' + i + '"><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>');
 		switch (results[i]) {
 			case 1:
 				$('#table' + i + ' tr:nth-child(2) td:nth-child(2)').append('<div class="dot"></div>');
@@ -81,3 +81,6 @@ function showRoll() {
 		}
 	}
 }
+$(document).ready(function() {
+	showRoll();
+})
